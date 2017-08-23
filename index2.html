@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .border-image-1px {
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+      border-width: 1px 0;
+      border-color: #666666;
+      border-style: solid;
+      border-image:
+         url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='4'><rect x='0' y='0' width='1' height='1' fill='#000'/><rect x='0' y='3' width='1' height='1' fill='#000'/></svg>") 2 0 stretch;
+      /*border-image-slice: 2;*/
+    }
+    .border-plain {
+      margin-top: 20px;
+      width: 100px;
+      height: 100px;
+      border-top: 1px solid #666;
+      border-bottom: 1px solid #666;
+    }
+  </style>
+</head>
+<body>
+<div class="border-image-1px">
+  <a href="https://www.zhihu.com">知乎</a>
+</div>
+<div class="border-plain">
+
+</div>
+
+</body>
+</html>
